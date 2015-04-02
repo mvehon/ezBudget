@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#ffb2b4aa">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#7cfff8f2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="@dimen/label_width"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/debits"
+                android:id="@+id/textViewDebit"
+                android:layout_margin="5dp"
+                android:layout_gravity="left"
+                android:textColor="#ff000000" />
+
+            <ListView
+                android:layout_width="@dimen/table_width"
+                android:layout_height="@dimen/table_height"
+                android:id="@+id/listViewDebit"
+                android:layout_margin="5dp"
+                android:background="#99ffffff" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/add_debit"
+            android:id="@+id/buttonDebit"
+            android:layout_margin="5dp"
+            android:onClick="onDebitPressed"
+            android:background="#c9fffeef" />
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/label_width"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/credits"
+            android:id="@+id/textViewCredit"
+            android:layout_margin="5dp"
+            android:layout_gravity="left"
+            android:textColor="#ff000000" />
+
+        <ListView
+            android:layout_width="@dimen/table_width"
+            android:layout_height="@dimen/table_height"
+            android:id="@+id/listViewCredit"
+            android:layout_margin="5dp"
+            android:background="#99ffffff" />
+    </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/add_credit"
+            android:id="@+id/buttonCredit"
+            android:layout_margin="5dp"
+            android:onClick="onCreditPressed"
+            android:background="#c9fffeef"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
