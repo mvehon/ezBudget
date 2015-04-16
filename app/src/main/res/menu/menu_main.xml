@@ -5,6 +5,8 @@
     <item android:id="@+id/statistics" android:title="@string/stats"
         android:orderInCategory="100" app:showAsAction="never"
         android:onClick="onStatisticsPressed"/>
+    <item android:id="@+id/edituser" android:title="@string/edituser"
+        android:orderInCategory="100" app:showAsAction="never"/>
     <item android:id="@+id/logout" android:title="@string/logout"
         android:orderInCategory="100" app:showAsAction="never"
         android:onClick="onLogoutPressed"/>
